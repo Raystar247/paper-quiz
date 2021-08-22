@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user: main page</title>
+    <link rel="stylesheet" type='text/css' href="{% static 'css/upload.css' %}">
+    <link rel="stylesheet" type='text/css' href="{% static 'css/dropify.css' %}">
+    <script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/dropify.min.js' %}"></script>
+</head>
+<body>
+    <form action='/register_qgroup/' method="POST" class='form' enctype="multipart/form-data">{% csrf_token %}
+        <div class='title'><p class='innertitle'>PQRS</p></div>
+        <div class='caption'><p class='innercaption'>Register QuestionGroup</p></div>
+        <input type="text" name='name' placeholder="Name" class='field'/>
+        <div class='timefield_outer'>
+            解答時間: 
+            <input type="text" name='minutes' placeholder="Minutes" class='timefield'/>
+            <input type="text" name='seconds' placeholder="Seconds" class='timefield'/>
+        </div>        
+        <div class='dropifybox'><input type="file" class="dropify" data-default-file="ファイルを選択してください" name="csv"/></div>
+        <button type="submit" class='submit_btn'> submit </button>
+    </form>
+    <script>
+        $('.dropify').dropify();
+    </script>
+</body>
+</html>

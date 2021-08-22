@@ -1,0 +1,33 @@
+@media screen and (min-width: 481px) {
+    .block {
+        width: 40%;
+    }
+}
+
+.block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-image: -webkit-linear-gradient(left, cyan 0%, azure 100%);
+    background-image: linear-gradient(to right, cyan 0%, azure 100%);
+}
+
+.innertitle {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    height: 30px;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.title {
+    display: table;
+    width: 100%;
+}
+
+
+

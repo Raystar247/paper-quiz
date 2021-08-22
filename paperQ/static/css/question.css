@@ -1,0 +1,128 @@
+@media screen and (min-width: 481px) {
+    .outer {
+        width: 40%;
+    }
+}
+
+.outer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.index {
+    margin-top: 5%;
+}
+
+.q_text {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 150px;
+    margin-bottom: 3%;
+    padding-left: 10px;
+    border-left: 2px solid black;
+    border-bottom: 1px solid black;
+}
+
+.innerq {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.answerbox {
+    height: 30px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.next-btn {
+    color: #000;
+    width: 80%;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 4px solid #d8dcdc;
+    border-right: 4px solid #666;
+    border-bottom: 4px solid #333;
+    border-left: 4px solid #868888;
+    border-radius: 0;
+    background-image: -webkit-linear-gradient(135deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    background-image: linear-gradient(-45deg, #333 0%, #868888 20%, #d8dcdc 34%, white 53%, #666 100%);
+    text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff, 0 0 5px #fff;
+  }
+  
+  .next-btn:hover {
+    text-shadow: 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff, 0 0 7px #fff;
+  }
+
+
+
+  
+  .btn,
+  a.btn,
+  button.btn {
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 4;
+    position: relative;
+    display: inline-block;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    color: #212529;
+    border-radius: 0.5rem;
+  }
+  
+  a.btn-rounded {
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    padding: 0 0;
+    border-radius: 50%;
+    background: #fcfff4;
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(#fcfff4),
+      color-stop(40%, #dfe5d7),
+      to(#b3bead)
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #fcfff4 0%,
+      #dfe5d7 40%,
+      #b3bead 100%
+    );
+    background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    -webkit-box-shadow: inset 5px 30px 20px rgba(255, 255, 255, 0.5),
+      0 6px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 5px 30px 20px rgba(255, 255, 255, 0.5),
+      0 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  a.btn-rounded i {
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  
+

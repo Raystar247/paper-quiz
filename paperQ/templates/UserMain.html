@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user: main page</title>
+    <link rel="stylesheet" href="{% static 'css/user_main.css' %}">
+</head>
+<body>
+    <form action='/register_person/' method="POST" class='form'>{% csrf_token %}
+        <div class='title'><p class='innertitle'>PQRS</p></div>
+        <div class='caption'><p class='innercaption'>Register Answersheet</p></div>
+        <input type="text" name='name' placeholder="Name" class='field'/>
+        <input type="text" name='question_group' placeholder="QuestionSet" class='field'/>
+        <button type="submit" class='submit_btn'/> submit </button>
+    </form>
+</body>
+</html>
